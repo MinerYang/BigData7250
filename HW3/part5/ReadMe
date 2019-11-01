@@ -1,0 +1,24 @@
+About NLineInputFormat
+----------------------
+With this functionality, I specify 3 lines should go to a mapper.
+The input file has 6 lines, and I set number of lines per mapper to 3, then I have 2 mappers (show in screenshot1)
+
+About SequenceFileInputFormat
+-----------------------------
+I first use a SequenceFileOutputFormat to create a SequenceFile to my hdfs, Then set the setInputFormatClass into SequenceFileInputFormat as usual.
+
+About FixedLengthInputFormat
+----------------------------
+I import more dependencies in order to use it. org.apache.hadoop.mapreduce.lib.input.FixedLengthInputFormat;
+
+About CombineFileInputFormat
+---------------------------
+It is an abstract class. We can either implement our own one or use CombineTextInputFormat
+I import more dependencies in order to use it. 
+org.apache.hadoop.mapreduce.lib.input. CombineTextInputFormat;
+
+About TextInputFormat
+---------------------
+Just use it as usual.
+
+ 
